@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    margin-top: 80px; /* Ajusta esta altura según la altura de tu .container-head */
+    text-decoration: none;
+}
+
+
+.container-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Resto de tu código CSS... */
+
+
+.container-head .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #e74c4c;
+}
+
+span{
+    color: black;
+}
+
+
+.container-head .navbar ul{
+    list-style: none;        
+}
+
+.container-head .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.container-head .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+    color: black;
+    transition: .3s;
+}
+
+.container-head .navbar ul li a:hover{
+    background: #e74c4c;
+    color: #fff;
+}
+
+#menu-bar{
+    display: none;
+}
+
+.container-head label{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px){
+    .container-head{
+        padding: 20px;
+    }
+
+    .container-head label{
+        display: initial;
+    }
+
+    .container-head .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .container-head .navbar ul li{
+        width: 100%;
+    }
+
+    .container-head .navbar ul li{
+        position: relative;
+        width: 100%;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}

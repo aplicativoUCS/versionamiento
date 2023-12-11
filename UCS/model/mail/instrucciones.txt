@@ -1,0 +1,2 @@
+1. Quitar ; en archivos php.ini en línea extension=php_openssl.dll
+2. Habilitar permiso aplicaciones no seguras en Gmail

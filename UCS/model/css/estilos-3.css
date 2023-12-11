@@ -1,0 +1,103 @@
+:root{
+	--gold1: #F4BD76;
+	--gold2: #F6CD8F;
+	--gray: #ffffff80;
+	--gray2: #f7d9d990;
+	--black1: #1A1B1F;
+	--black2: #30353B;
+	--shadow: 0 10px 10px;
+	--color_shadow: #00000033;
+	--body-color:#E4E9F7;
+	--sidebar-color:#FFF;
+	--primary-color:#695CFE;
+	--primary-color-light:#F6F5FF;
+	--toggle-color:#DDD;
+	--text-color:#707070;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #424447;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--gold1);
+}
+
+.image-description {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; 
+    text-align: left;
+    width: 96%;
+}
+
+.image-description h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.image-description p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra las columnas horizontalmente */
+    padding: 20px;
+}
+
+.image {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
